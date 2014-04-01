@@ -24,6 +24,9 @@ PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/bin/50-slim.sh:system/addon.d/50-slim.sh \
     vendor/slim/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
     vendor/slim/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+    
+# busybox (only until sources are fixed for master)
+PRODUCT_COPY_FILES += vendor/slim/prebuilt/busybox:system/xbin/busybox
 
 # SLIM-specific init file
 PRODUCT_COPY_FILES += \
