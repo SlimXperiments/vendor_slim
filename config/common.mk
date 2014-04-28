@@ -99,6 +99,11 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs
 
+# wpa_supplicant
+PRODUCT_PACKAGES += \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
