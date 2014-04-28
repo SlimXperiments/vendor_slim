@@ -148,7 +148,7 @@ endif
 ifndef SLIM_BUILD_TYPE
     SLIM_BUILD_TYPE := EXPERIMENTAL
     PLATFORM_VERSION_CODENAME := EXPERIMENTAL
-    SLIM_POSTFIX := -$(shell date +"%d/%m/%y-%H:%M")
+    SLIM_POSTFIX := -$(shell date +"%d-%m-%y_%H-%M")
 endif
 
 # Set all versions
