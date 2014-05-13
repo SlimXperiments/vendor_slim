@@ -58,17 +58,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
 
-# Embed SuperUser
-SUPERUSER_EMBEDDED := true
+# SuperSu
+PRODUCT_PACKAGES += \
+    SuperSu
 
 # Required packages
 PRODUCT_PACKAGES += \
     Camera \
     CellBroadcastReceiver \
     Development \
-    SpareParts \
-    Superuser \
-    su
+    SpareParts
 
 # Optional packages
 PRODUCT_PACKAGES += \

@@ -1,7 +1,5 @@
 # Extras
 
-import /init.superuser.rc
-
 on init
     export TERMINFO /system/etc/terminfo
     export TERM linux
@@ -40,3 +38,7 @@ service sysinit /system/bin/sysinit
     user root
     oneshot
     disabled
+
+service su_daemon /system/xbin/daemonsu --auto-daemon
+    class main
+    oneshot
