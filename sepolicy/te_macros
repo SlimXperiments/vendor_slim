@@ -1,0 +1,4 @@
+# System only
+# SELinux rules which apply only to system mode
+#
+define(`not_recovery', ifelse(target_recovery, `true', , $1))

@@ -12,4 +12,6 @@ BOARD_SEPOLICY_UNION += \
     installd.te \
     seapp_contexts \
     vold.te \
-    mac_permissions.xml
+    mac_permissions.xml \
+    te_macros \
+    recovery.te
